@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+    width: 350px;
+    text-align: center;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+/* Heading style */
+h1 {
+    font-size: 28px;
+    color: #6a11cb;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-section input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-section input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+.input-section button {
+    padding: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+.input-section button:active {
+    transform: scale(0.97);
+}
+
+/* Weather info styling */
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Error message */
+.error {
+    margin-top: 15px;
+    color: #e74c3c;
+    font-weight: bold;
+    display: none;
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
